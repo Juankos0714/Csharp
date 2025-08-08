@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinFormsApp1": {
+      "commandName": "Project"
+    },
+    "Perfil 1": {
+      "commandName": "Project"
+    }
+  }
+}
