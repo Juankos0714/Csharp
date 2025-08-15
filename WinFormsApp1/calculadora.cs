@@ -177,23 +177,33 @@ namespace WinFormsApp1
         {
             var += "0";
             in2 += "0";
+            label1.Text = var;
         }
 
         private void btnCe_Click(object sender, EventArgs e)
-{
-    if (!string.IsNullOrEmpty(var))
-    {
-        
-        var = var.Substring(0, var.Length - 1);
-
-         if (!string.IsNullOrEmpty(in2))
         {
-            in2 = in2.Substring(0, in2.Length - 1);
+            var = "";
+            in1 = "";
+            in2 = "";
+            resultado = "";
+            label1.Text = "";
         }
 
-      
-        label1.Text = var;
-    }
-}
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(var))
+            {
+                var = var.Substring(0, var.Length - 1);
+                if (!string.IsNullOrEmpty(in2))
+                {
+                    in2 = in2.Substring(0, in2.Length - 1);
+                }
+                label1.Text = var;
+            }
+        }
+
+        
+            
+        
     }
 }
