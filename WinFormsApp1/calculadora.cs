@@ -180,8 +180,20 @@ namespace WinFormsApp1
         }
 
         private void btnCe_Click(object sender, EventArgs e)
-        {
+{
+    if (!string.IsNullOrEmpty(var))
+    {
+        
+        var = var.Substring(0, var.Length - 1);
 
+         if (!string.IsNullOrEmpty(in2))
+        {
+            in2 = in2.Substring(0, in2.Length - 1);
         }
+
+      
+        label1.Text = var;
+    }
+}
     }
 }
